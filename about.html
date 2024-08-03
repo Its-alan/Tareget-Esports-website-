@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> Gaming Esport Site</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="subheader" >
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="games.html">GAMES</a></li>
+                        <li><a href="blogs.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+
+        </section>
+<!-------------content--------------->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the World's largest Esport Site</h1>
+             <p>In today's world most of the youth loves to play 
+                video games but are often discouraged by there parents 
+                and teachers to carry out gaming as a career by giving reason such as no scope 
+                in future and no regular income... which is totally wrong as
+                today the online gaming industry is worth more than 180+ billion dollars.
+                Most of the sucessful youtubers and media influencers are gamers who are now worth millions
+                and they made all this fortune in a very short amount of time. Apart from being youtubers,
+                many online games hosts international tournaments with a mind blowing prize pool.
+                we are here to provide you all the necessities needed to build up a career as a proffestional
+                gamer...So stop wasting time on playing games just for fun and spending money on buying useless
+                stuff but if you really have the passion join us now and set your future in your own ways.<br>
+                <em>“We all make choices, but in the end... our choices make us.”</em> </p>
+                 <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+    </div>
+</section>
+
+
+
+<!--------------footer------------->
+<section class="footer">
+    <h4>Connect with Us</h4>
+    <p>We are in all  the popular social media sites.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-youtube"></i>
+    </div>
+</section>
+
+<!---------------javascript-------------->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showmenu(){
+            navLinks.style.right = "0"; 
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>    
+    </body>
+</html>

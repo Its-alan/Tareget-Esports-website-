@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> Gaming Esport Site</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="subheader" >
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">GAMES</a></li>
+                        <li><a href="blogs.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+
+        </section>
+<!-----------contact------------>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.474001434213!2d77.2335712!3d28.7053772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdd6b3e74e41%3A0x596b938f54e0740!2sSignature%20Bridge%20Delhi!5e0!3m2!1sen!2sin!4v1639286664093!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Signature Bridge Delhi</h5>
+                    <p>Outer Ring Rd, Block H, Majnu-ka-tilla, Timarpur, Delhi, 110054</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+91 9582554409</h5>
+                    <p>Monday to Saturday,10AM to 6PM </p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>alan24saji@gmail.com</h5>
+                    <p>Email us for any query!!</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form>
+
+                <div>
+                  <label>Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Enter your name.." onkeyup='validateName()'>
+                  <span id='name-error'></span>
+                </div>
+        
+                <div>
+                  <label>Phone Number</label>
+                  <input type="tel" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+                  <span id='phone-error'></span>
+                </div>
+        
+                <div>
+                  <label>Email address</label>
+                  <input type="email" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+                  <span id='email-error'></span>
+                </div>   
+        
+                <div>
+                  <label>Your Message</label>
+                  <textarea rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+                  <span id='message-error'></span>
+                </div>
+        
+              <button onclick='return validateForm()' type="submit" class="hero-btn red-btn">Submit</button>
+              <span id='submit-error'></span>
+            </form>
+        
+        <script src="script.js"></script>
+        </div>
+    </div>
+</section>
+
+
+<!--------------footer------------->
+<section id="form" class="footer">
+    <h4>Connect with Us</h4>
+    <p>We are in all  the popular social media sites.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-youtube"></i>
+    </div>
+</section>
+
+<!---------------javascript-------------->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showmenu(){
+            navLinks.style.right = "0"; 
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>    
+    </body>
+    <script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault()
+
+        var username = document.getElementById('username').value
+        
+    })
+    </script>
+    <script>
+        function validateform(){  
+    var name=document.myform.name.value;  
+
+    if (name==null || name==""){  
+      alert("Name can't be blank"); 
+      document.myform.focus(); 
+      return false; 
+      
+         } }
+    </script>
+</html>

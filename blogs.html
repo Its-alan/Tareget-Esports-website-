@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> Gaming Esport Site</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="subheader" >
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="games.html">GAMES</a></li>
+                        <li><a href="blogs.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>Daily updates on online gaming and tournaments</h1>
+
+        </section>
+<!-------------blogs---------------->
+<section class="content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/blog.jpg">
+            <h2>Daily updates on online gaming and tournaments</h2>
+            <p>Gaming is a highly competitive sector where professionals are needed who have a good balance of creativity, fun and technology. The most important skills required in this field are creativity and passion.
+
+                You can also pursue Career in Gaming after completing your B.Tech in computer science engineering as a Game developer.  Candidates who are good in programming languages they also have good opportunities in the gaming industry.</p><br>
+            <p>“It is a fun career with lots of job opportunities”.
+
+                There are many job opportunities are available in India as well as abroad. India offers game development and animation services at highly competitive rates as compared to other outsourcing areas.
+                
+                You can opt for your career in various genres of gaming such as video gaming, console gaming, wireless gaming, PC gaming and multiplayer gaming.
+                
+                The growth of Indian games industry has provided several job opportunities to the skilled professionals. There are many top game designing companies in India, which recruits professionals for game designing.
+                
+                </p><br>
+            <p>Can you think you can make a living off of video games?! You must be exceptionally skilled and commit a considerable amount of time per day to work, but that is true of everything, right? A gamer’s pay would likely change based on their level of ability. Top teams, including pro athletes, make money from paid competitions and private sponsorship deals. It can be a brief profession, and many pro players go into gaming architecture and music or coding and creation since they withdraw from professional gaming.
+
+                Professional players typically play computer games for money or a salary. Typically, those individuals learn the game in detail to grasp it and compete in Esports. Formalized paraphrase If a pro gamer fits the special restrictions for that gaming category, he or she could also be other types of gamer, including a hardcore gamer. Skilled gamers and groups in Asia, especially South Korea and China, are funded by major businesses and can gain upwards of $100,000 annually.</p><br>
+
+                <div class="comment">
+                    <h3>Leave a comment </h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Mobile Gaming</span>
+                <span>33</span>
+            </div>
+            <div>
+                <span>Console Gaming</span>
+                <span>27</span>
+            </div>
+            <div>
+                <span>Streamers</span>
+                <span>24</span>
+            </div>
+            <div>
+                <span>Sponsorship</span>
+                <span>26</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------footer------------->
+<section class="footer">
+    <h4>Connect with Us.</h4>
+    <p>We are in all  the popular social media sites.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-youtube"></i>
+    </div>
+</section>
+
+<!---------------javascript-------------->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showmenu(){
+            navLinks.style.right = "0"; 
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>    
+    </body>
+</html>
